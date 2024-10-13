@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom {
+    @apply w-[1440px];
+}
+
+section {
+    @apply flex justify-center;
+}
+
+.btn-hover-dark {
+    @apply transition-all duration-200 hover:bg-white hover:text-primary;
+}
+
+.btn-hover-light {
+    @apply transition-all duration-200 hover:bg-secondary hover:text-white;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}

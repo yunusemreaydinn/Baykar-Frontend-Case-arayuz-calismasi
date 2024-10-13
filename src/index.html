@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="script.js" type="module"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Baykar Frontend Case</title>
+</head>
+
+<body class="text-primary font-roboto bg-gradient-to-b from-[#FFFBEB] to-[#FFFFFF]">
+
+    <!-- Navigation bar -->
+    <nav class="flex justify-center w-full text-secondary">
+        <div class="flex items-center justify-between p-4 custom md:px-20 md:py-6">
+            <h5 class="font-bold text-title">Collers</h5>
+
+            <!-- Mobile Menu Icon -->
+            <div class="block lg:hidden">
+                <button id="menu-btn" class="text-2xl">
+                    <img src=" /src/assets/menu-scale.png" alt="menu icon">
+                </button>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div id="menu" class="hidden lg:flex">
+                <ul class="flex items-center gap-4">
+                    <li class="relative px-3 py-2 font-medium cursor-pointer group">Products<span
+                            class="absolute left-0 right-0 bottom-0 h-[2px] bg-secondary scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                    </li>
+                    <li class="relative px-3 py-2 font-medium cursor-pointer group">Solutions<span
+                            class="absolute left-0 right-0 bottom-0 h-[2px] bg-secondary scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                    </li>
+                    <li class="relative px-3 py-2 font-medium cursor-pointer group">Pricing<span
+                            class="absolute left-0 right-0 bottom-0 h-[2px] bg-secondary scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                    </li>
+                    <li class="relative px-3 py-2 font-medium cursor-pointer group">Resources<span
+                            class="absolute left-0 right-0 bottom-0 h-[2px] bg-secondary scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                    </li>
+                    <li class="relative px-3 py-2 font-medium cursor-pointer group">Log In<span
+                            class="absolute left-0 right-0 bottom-0 h-[2px] bg-secondary scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                    </li>
+                    <li><button class="px-5 py-2 font-medium border-2 rounded-lg btn-hover-light">Sign up now</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="absolute left-0 right-0 z-20 hidden p-4 text-white shadow-lg bg-primary lg:hidden top-16">
+                <ul class="flex flex-col gap-4">
+                    <li class="px-3 py-2 font-medium cursor-pointer">Products</li>
+                    <li class="px-3 py-2 font-medium cursor-pointer">Solutions</li>
+                    <li class="px-3 py-2 font-medium cursor-pointer">Pricing</li>
+                    <li class="px-3 py-2 font-medium cursor-pointer">Resources</li>
+                    <li class="px-3 py-2 font-medium cursor-pointer">Log In</li>
+                    <li class="px-3 py-2 font-medium border-2 rounded-lg">
+                        <button class="px-2">Sign up now</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="wrapper" class="relative">
+        <img src=" /src/assets/hero-background-rectangle.png" alt="hero background image"
+            class="absolute object-cover w-full h-full lg:object-right-top -z-10">
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="flex flex-col gap-8 px-4 py-12 lg:gap-20 lg:p-20 lg:flex-row custom">
+                <div id="hero-left-col" class="flex flex-col justify-center gap-12 text-center lg:text-left lg:w-2/3">
+                    <h1 id="main-headline" class="font-extrabold lg:text-h1 text-[56px] leading-[64px]">Collectible
+                        Sneakers
+                    </h1>
+                    <p class="text-[18px]">Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse
+                        nec
+                        lorem mauris. Pharetra,
+                        eu imperdiet ipsum ultrices amet.</p>
+                    <div class="flex justify-center gap-4 lg:justify-start text-secondary">
+                        <button class="p-3 border-2 rounded-lg btn-hover-light"><span
+                                class="px-4 text-[20px] font-medium">Sign up
+                                now</span></button>
+                        <button
+                            class="flex items-center px-2 py-3 transition-all duration-100 ease-in-out rounded-lg hover:border-2 ">
+                            <img src=" /src/assets/play-circle.svg" alt="watch demo button icon"><span
+                                class="px-2 font-medium">Watch
+                                Demo</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="hero-right-col" class="bg-opacity-25 lg:w-1/3">
+                    <img src=" /src/assets/hero-right-shoe.png" alt="hero section shoe image" class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <div class="px-12 py-12 custom lg:gap-20 lg:p-20">
+                <div class="flex flex-col gap-8 lg:gap-20 lg:flex-row ">
+                    <!-- Feature 1 -->
+                    <div class="flex flex-col gap-[10px] text-center lg:text-left items-center lg:items-start">
+                        <img src=" /src/assets/features-icon-1.png" alt="feature icon" class="h-16">
+                        <h3 class="font-medium text-[20px]">Nibh viverra</h3>
+                        <p class="text-[18px]">Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat
+                            turpis natoque leo, massa. </p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="flex flex-col gap-[10px] text-center lg:text-left items-center lg:items-start">
+                        <img src=" /src/assets/features-icon-2.png" alt="feature icon" class="h-16">
+                        <h3 class="font-medium text-[20px]">Cursus amet</h3>
+                        <p class="text-[18px]">Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat
+                            turpis natoque leo, massa. </p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="flex flex-col gap-[10px] text-center lg:text-left items-center lg:items-start">
+                        <img src=" /src/assets/features-icon-3.png" alt="feature icon" class="h-16">
+                        <h3 class="font-medium text-[20px]">Ipsum fermentum</h3>
+                        <p class="text-[18px]">Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat
+                            turpis natoque leo, massa. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="bg-primary">
+        <div class="relative flex flex-col items-center gap-12 px-4 py-12 text-white lg:gap-20 lg:p-20 custom">
+            <div class="flex flex-col items-center justify-center w-full gap-8 lg:justify-between lg:flex-row">
+                <h5 class="text-[32px] font-bold lg:text-[56px] lg:font-extrabold">The best of the best</h5>
+                <button class="px-6 py-3 font-medium border-2 rounded-lg btn-hover-dark">
+                    <span class="px-6 text-[24px]">Sign up now</span>
+                </button>
+            </div>
+
+            <img src=" /src/assets/backlights-desktop.png" alt="backlights background"
+                class="absolute hidden transform -translate-x-1/2 lg:block -translate-y-1/3 top-1/2 left-1/2">
+            <img src=" /src/assets/backlights-mobile.png" alt="backlights background"
+                class="absolute block w-full transform -translate-x-1/2 lg:hidden -translate-y-1/3 top-1/2 left-1/2">
+
+            <!-- Product Cards Container -->
+            <div class="z-10 flex flex-col gap-12 lg:flex-row">
+                <!-- Product Card-1 -->
+                <div class="flex flex-col gap-4 rounded-[10px] shadow-shd w-[400px] bg-primary">
+                    <img src=" /src/assets/product-1.png" alt="product 1 image"
+                        class="object-cover rounded-tl-lg rounded-tr-lg">
+                    <div class="flex flex-col gap-4 px-8 py-4">
+                        <h6 class="text-[24px] font-bold">Title</h6>
+                        <p class="text-[18px]">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <button
+                            class="flex items-center justify-center w-full p-4 font-medium border-2 rounded-lg btn-hover-dark">
+                            <img src=" /src/assets/shopping-cart.png" alt="product card buy button icon"><span
+                                class="px-4 font-medium text-[20px]">Buy
+                                Now</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card-2 -->
+                <div class="flex flex-col gap-4 rounded-[10px] shadow-shd w-[400px] bg-primary">
+                    <img src=" /src/assets/product-2.png" alt="product 1 image"
+                        class="object-cover rounded-tl-lg rounded-tr-lg">
+                    <div class="flex flex-col gap-4 px-8 py-4">
+                        <h6 class="text-[24px] font-bold">Title</h6>
+                        <p class="text-[18px]">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <button
+                            class="flex items-center justify-center w-full p-4 font-medium border-2 rounded-lg btn-hover-dark">
+                            <img src=" /src/assets/shopping-cart.png" alt="product card buy button icon"><span
+                                class="px-4 font-medium text-[20px]">Buy
+                                Now</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card-3 -->
+                <div class="flex flex-col gap-4 rounded-[10px] shadow-shd w-[400px] bg-primary">
+                    <img src=" /src/assets/product-3.png" alt="product 1 image"
+                        class="object-cover rounded-tl-lg rounded-tr-lg">
+                    <div class="flex flex-col gap-4 px-8 py-4">
+                        <h6 class="text-[24px] font-bold">Title</h6>
+                        <p class="text-[18px]">Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.</p>
+                    </div>
+                    <div class="px-8 pb-8">
+                        <button
+                            class="flex items-center justify-center w-full p-4 font-medium border-2 rounded-lg btn-hover-dark">
+                            <img src=" /src/assets/shopping-cart.png" alt="product card buy button icon"><span
+                                class="px-4 font-medium text-[20px]">Buy
+                                Now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Join Us Section -->
+    <section id="why-join-us" class="relative w-full p-4 lg:gap-20 lg:py-40 lg:px-20">
+        <div
+            class="flex flex-col lg:flex-row justify-center lg:justify-between gap-8 px-4 shadow-xl custom -z-20 rounded-[30px] lg:p-20 lg:relative">
+            <div class="flex flex-col items-center gap-6 pt-8 lg:items-start">
+                <h5 class="font-bold text-[32px] lg:hidden">Why Join Us</h5>
+                <h2 class="hidden font-extrabold text-[56px] lg:block">Why Join Us</h2>
+                <ul class="flex flex-col gap-2">
+                    <li class="flex gap-2 lg:text-[20px]"><img src=" /src/assets/check.svg" alt="checkmark icon">Est et
+                        in
+                        pharetra magna
+                        adipiscing ornare aliquam</li>
+                    <li class="flex gap-2 lg:text-[20px]"><img src=" /src/assets/check.svg" alt="checkmark icon">Tellus
+                        arcu
+                        sed consequat ac
+                        velit ut eu blandit.</li>
+                    <li class="flex gap-2 lg:text-[20px]"><img src=" /src/assets/check.svg"
+                            alt="checkmark icon">Ullamcorper
+                        ornare in et
+                        egestas dolor orci.</li>
+                </ul>
+                <button class="p-3 border-2 rounded-lg border-secondary text-secondary btn-hover-light"><span
+                        class="px-6 font-medium text-[20px] lg:text-[24px]">Sign up
+                        now</span></button>
+            </div>
+
+            <div>
+                <img src=" /src/assets/deco-video.png" alt="deco video image" class="lg:max-w-[520px]">
+                <img src=" /src/assets/deco-video-background-mobile.png" alt="deco video background image"
+                    class="absolute object-cover object-center w-full transform -translate-x-1/2 -translate-y-1/4 lg:hidden top-1/2 left-1/2 -z-10">
+
+                <img src=" /src/assets/deco-video-background-desktop.png" alt="deco video background image"
+                    class="absolute hidden object-cover object-center w-1/2 transform -translate-x-1 -translate-y-1/2 -right-10 top-1/2 lg:block -z-10">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="flex flex-col items-center gap-20 p-20 overflow-x-hidden">
+
+        <div class="lg:w-[1440px]">
+            <div class="flex items-center pb-4">
+                <h2 class="lg:font-extrabold font-bold lg:text-[56px] text-[32px] text-center w-full lg:text-left">
+                    Because they love us
+                </h2>
+                <div class="hidden gap-6 lg:flex">
+                    <div class="swiper-button-prev"><img src=" /src/assets/arrow-left.png" alt="slider left button">
+                    </div>
+                    <div class="swiper-button-next"><img src=" /src/assets/arrow-right.png" alt="slider right button">
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute inset-0 flex items-start justify-center -z-10">
+                    <img src=" /src/assets/testimonials-bg-desktop.png" alt="testimonial background"
+                        class="h-[250px] w-full ">
+                    <img src=" /src/assets/testimonials-bg-mobile.png" alt="testimonial background"
+                        class="lg:hidden h-[250px] w-full">
+                </div>
+
+                <!-- Mobile testimonials -->
+                <div class="pb-4 overflow-x-hidden lg:hidden swiper-mobile">
+                    <div class="flex swiper-wrapper w-[400px]">
+
+                        <div class="min-w-full p-4 swiper-slide ">
+                            <div class="rounded-[20px] shadow-xl p-6 flex flex-col gap-2 bg-white">
+                                <div class="py-4"><img src=" /src/assets/kontrastr-logo.png" alt="logo" /></div>
+                                <p class="text-black text-gray-700">Amet morbi enim sodales quis dui, in habitant
+                                    pharetra.
+                                    Risus id fringilla sed adipiscing volutpat sit varius turpis. Sed pretium se.
+                                </p>
+                                <div class="flex items-center gap-4 pt-4">
+                                    <img src=" /src/assets/ralph-edwards-user.png" alt="user photo" />
+                                    <div>
+                                        <p class="font-semibold">Ralph Edwards</p>
+                                        <p class="text-gray-500">Product Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="min-w-full p-4 swiper-slide ">
+                            <div class="rounded-[20px] shadow-xl p-6 flex flex-col gap-2 bg-white">
+                                <div class="py-4"><img src=" /src/assets/zoomerr-logo.png" alt="logo" />
+                                </div>
+                                <p class="text-black text-gray-700">Non risus viverra enim, quis. Eget vitae arcu
+                                    vivamus
+                                    sit
+                                    tellus, viverra turpis lorem. Varius a turpis urna id porttitor.
+                                </p>
+                                <div class="flex items-center gap-4 pt-4">
+                                    <img src=" /src/assets/hellen-jummy-user.png" alt="user photo" />
+                                    <div>
+                                        <p class="font-semibold">Hellen Jummy</p>
+                                        <p class="text-gray-500">Team Lead</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="min-w-full p-4 swiper-slide ">
+                            <div class="rounded-[20px] shadow-xl p-6 flex flex-col gap-2 bg-white">
+                                <div class="py-4"><img src=" /src/assets/shells-logo.png" alt="logo" />
+                                </div>
+                                <p class="text-black text-gray-700">Aliquet ridiculus mi porta habitant vulputate
+                                    rhoncus,
+                                    mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.
+                                </p>
+                                <div class="flex items-center gap-4 pt-4">
+                                    <img src=" /src/assets/hellena-john-user.png" alt="user photo" />
+                                    <div>
+                                        <p class="font-semibold">Hellena John</p>
+                                        <p class="text-gray-500">Co-founder</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="min-w-full p-4 swiper-slide ">
+                            <div class="rounded-[20px] shadow-xl p-6 flex flex-col gap-2 bg-white">
+                                <div class="py-4"><img src=" /src/assets/artvenue-logo.png" alt="logo" /></div>
+                                <p class="text-black text-gray-700">A eget sed posuere dui risus habitasse mauris.
+                                    Venenatis
+                                    aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.
+                                </p>
+                                <div class="flex items-center gap-4 pt-4">
+                                    <img src=" /src/assets/davit-oshodi.png" alt="user photo" />
+                                    <div>
+                                        <p class="font-semibold">David Oshodi</p>
+                                        <p class="text-gray-500">Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="min-w-full p-4 swiper-slide ">
+                            <div class="rounded-[20px] shadow-xl p-6 flex flex-col gap-2 bg-white">
+                                <div class="py-4"><img src=" /src/assets/waves-logo.png" alt="logo" />
+                                </div>
+                                <p class="text-black text-gray-700">Magna egestas aliquet ut integer non. Sed diam enim
+                                    nibh
+                                    sit. Aliquam laoreet aenean metus nibh eu scelerisque.
+                                </p>
+                                <div class="flex items-center gap-4 pt-4">
+                                    <img src=" /src/assets/charlotte-hanlin.png" alt="user photo" />
+                                    <div>
+                                        <p class="font-semibold">Charolette Hanlin</p>
+                                        <p class="text-gray-500">CEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Desktop testimonials -->
+                <div class="hidden pb-4 overflow-x-hidden lg:block swiper-desktop">
+                    <div class="flex w-full swiper-wrapper">
+                        <div class="min-w-[25%] swiper-slide">
+                            <div class="w-full p-4 h-[350px]">
+                                <div
+                                    class="rounded-[20px] h-full shadow-xl p-6 flex flex-col justify-between gap-2 bg-white">
+                                    <div class="py-4"><img src=" /src/assets/kontrastr-logo.png" alt="logo" /></div>
+                                    <p class="text-black text-gray-700">Amet morbi enim sodales quis dui, in habitant
+                                        pharetra.
+                                        Risus id fringilla sed adipiscing volutpat sit varius turpis. Sed pretium se.
+                                    </p>
+                                    <div class="flex items-center gap-4 pt-4">
+                                        <img src=" /src/assets/ralph-edwards-user.png" alt="user photo" />
+                                        <div>
+                                            <p class="font-semibold">Ralph Edwards</p>
+                                            <p class="text-gray-500">Product Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="min-w-[25%] swiper-slide">
+                            <div class="w-full p-4 h-[350px]">
+                                <div
+                                    class="rounded-[20px] h-full shadow-xl p-6 flex flex-col justify-between gap-2 bg-white">
+                                    <div class="py-4"><img src=" /src/assets/zoomerr-logo.png" alt="logo" /></div>
+                                    <p class="text-black text-gray-700">Non risus viverra enim, quis. Eget vitae arcu
+                                        vivamus
+                                        sit
+                                        tellus, viverra turpis lorem. Varius a turpis urna id porttitor.
+                                    </p>
+                                    <div class="flex items-center gap-4 pt-4">
+                                        <img src=" /src/assets/hellen-jummy-user.png" alt="user photo" />
+                                        <div>
+                                            <p class="font-semibold">Hellen Jummy</p>
+                                            <p class="text-gray-500">Team Lead</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="min-w-[25%] swiper-slide">
+                            <div class="w-full p-4 h-[350px]">
+                                <div
+                                    class="rounded-[20px] h-full shadow-xl p-6 flex flex-col justify-between gap-2 bg-white">
+                                    <div class="py-4"><img src=" /src/assets/shells-logo.png" alt="logo" /></div>
+                                    <p class="text-black text-gray-700">Aliquet ridiculus mi porta habitant vulputate
+                                        rhoncus,
+                                        mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.
+                                    </p>
+                                    <div class="flex items-center gap-4 pt-4">
+                                        <img src=" /src/assets/hellena-john-user.png" alt="user photo" />
+                                        <div>
+                                            <p class="font-semibold">Hellena John</p>
+                                            <p class="text-gray-500">Co-founder</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="min-w-[25%] swiper-slide">
+                            <div class="w-full p-4 h-[350px]">
+                                <div
+                                    class="rounded-[20px] h-full shadow-xl p-6 flex flex-col justify-between gap-2 bg-white">
+                                    <div class="py-4"><img src=" /src/assets/artvenue-logo.png" alt="logo" /></div>
+                                    <p class="text-black text-gray-700">A eget sed posuere dui risus habitasse mauris.
+                                        Venenatis
+                                        aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.
+                                    </p>
+                                    <div class="flex items-center gap-4 pt-4">
+                                        <img src=" /src/assets/davit-oshodi.png" alt="user photo" />
+                                        <div>
+                                            <p class="font-semibold">David Oshodi</p>
+                                            <p class="text-gray-500">Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="min-w-[25%] swiper-slide">
+                            <div class="w-full p-4 h-[350px]">
+                                <div
+                                    class="rounded-[20px] h-full shadow-xl p-6 flex flex-col justify-between gap-2 bg-white">
+                                    <div class="py-4"><img src=" /src/assets/waves-logo.png" alt="logo" /></div>
+                                    <p class="text-black text-gray-700">Magna egestas aliquet ut integer non. Sed diam
+                                        enim
+                                        nibh
+                                        sit. Aliquam laoreet aenean metus nibh eu scelerisque.
+                                    </p>
+                                    <div class="flex items-center gap-4 pt-4">
+                                        <img src=" /src/assets/charlotte-hanlin.png" alt="user photo" />
+                                        <div>
+                                            <p class="font-semibold">Charolette Hanlin</p>
+                                            <p class="text-gray-500">CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Collection Section -->
+    <section id="collection" class="relative">
+        <img src=" /src/assets/waves-bg.png" alt="hero background image"
+            class="absolute object-cover w-full h-full -z-10 top-32">
+        <div class="flex flex-col gap-8 px-4 pt-12 pb-24 w-full max-w-[1440px] lg:w-[1440px]">
+            <div class="flex flex-col gap-8">
+                <h5 class="font-bold text-[32px] text-center lg:text-left lg:hidden">Grow your collection</h5>
+                <h2 class="font-extrabold text-[56px] hidden lg:flex">Grow your collection</h2>
+                <p class="text-center lg:text-left lg:text-[18px]">Enim neque massa porta adipiscing elit. Sem libero id
+                    faucibus nibh amet dictum pellentesque sed. Eu
+                    non turpis risus odio sapien, fames sit rhoncus. Nec magna sed interdum sit purus tellus. Et
+                    volutpat proin neque placerat at bibendum quam tellus.</p>
+            </div>
+
+            <div class="justify-between w-full gap-20 lg:flex">
+                <div id="collection-left-col" class="py-4 overflow-x-scroll no-scrollbar">
+                    <ul class="flex justify-start gap-4 lg:flex-col">
+                        <li class="flex-none p-4 bg-white rounded-lg shadow-lg">
+                            <div class="flex items-center"><img src=" /src/assets/search.png" alt="search icon"
+                                    class="w-6 h-6">
+                                <span class="px-4 text-[20px] font-semibold">Bibendum tellus</span>
+                                <img src=" /src/assets/arrow-right-collection.png" alt="arrow right" class="w-6 h-6">
+                            </div>
+                        </li>
+                        <li
+                            class="flex-none p-4 transition-all duration-200 ease-linear bg-white rounded-lg hover:shadow-lg">
+                            <div class="flex items-center"><img src=" /src/assets/shield-check.png" alt="shield icon"
+                                    class="w-6 h-6">
+                                <span class="px-4 text-[20px] font-semibold">Cras eget</span>
+                            </div>
+                        </li>
+                        <li
+                            class="flex-none p-4 transition-all duration-200 ease-linear bg-white rounded-lg hover:shadow-lg">
+                            <div class="flex items-center"><img src=" /src/assets/rocket.png" alt="rocket icon"
+                                    class="w-6 h-6">
+                                <span class="px-4 text-[20px] font-semibold">Dolor pharetra</span>
+                            </div>
+                        </li>
+                        <li
+                            class="flex-none p-4 transition-all duration-200 ease-linear bg-white rounded-lg hover:shadow-lg">
+                            <div class="flex"><img src=" /src/assets/screen.png" alt="screen icon" class="w-6 h-6">
+                                <span class="px-4 text-[20px] font-semibold">Amet, fringilla</span>
+                            </div>
+                        </li>
+                        <li
+                            class="flex-none p-4 transition-all duration-200 ease-linear bg-white rounded-lg hover:shadow-lg">
+                            <div class="flex items-center"><img src=" /src/assets/podcast.png" alt="podcast icon"
+                                    class="w-6 h-6">
+                                <span class="px-4 text-[20px] font-semibold">Amet nibh</span>
+                            </div>
+                        </li>
+                        <li
+                            class="flex-none p-4 transition-all duration-200 ease-linear bg-white rounded-lg hover:shadow-lg">
+                            <div class="flex items-center"><img src=" /src/assets/settings-alt.png"
+                                    alt="settings alt icon" class="w-6 h-6">
+                                <span class="px-4 text-[20px] font-semibold">Sed velit</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="collection-right-col">
+                    <img src=" /src/assets/collection-desktop.png" alt="collection image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="min-h-screen bg-secondary">
+        <div class="relative custom">
+            <img src=" /src/assets/statistics-bg.png" alt="statistics image"
+                class="absolute inset-0 z-10 object-cover object-left h-full">
+            <img src=" /src/assets/statistics-shoe.png" alt="statistics image" class="absolute z-20 hidden lg:block">
+            <img src=" /src/assets/statistics-shoe.png" alt="statistics image"
+                class="absolute z-20 transform -translate-x-1/2 lg:hidden left-1/2">
+            <div class="absolute z-20 text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                <h1 class="font-extrabold text-[96px] text-center hidden lg:block">11,658,467</h1>
+                <h2 class="font-bold text-[56px] text-center hidden lg:block">Shoes Collected</h2>
+                <h3 class="font-extrabold text-[48px] text-center lg:hidden">11,658,467</h3>
+                <h5 class="font-bold text-[32px] text-center lg:hidden">Shoes Collected</h5>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="px-4 text-white lg:px-20 bg-primary">
+        <div
+            class="flex flex-col lg:flex-row justify-between lg:text-left gap-12 py-12 text-center border-b-[1px] border-[#334155]">
+            <div>
+                <h6 class="py-4 font-semibold">Product</h6>
+                <ul class="flex flex-col gap-4">
+                    <li>Pricing</li>
+                    <li>Overview</li>
+                    <li>Browse</li>
+                    <li>Accessibility</li>
+                    <li>Five</li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="py-4 font-semibold">Solutions</h6>
+                <ul class="flex flex-col gap-4">
+                    <li>Brainstorming</li>
+                    <li>Ideation</li>
+                    <li>Wireframing</li>
+                    <li>Research</li>
+                    <li>Design</li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="py-4 font-semibold">Support</h6>
+                <ul class="flex flex-col gap-4">
+                    <li>Contact Us</li>
+                    <li>Developers</li>
+                    <li>Documentation</li>
+                    <li>Integrations</li>
+                    <li>Reports</li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="py-4 font-semibold">Get the App</h6>
+                <ul class="flex flex-col gap-4">
+                    <li class="flex justify-center lg:justify-start"><img src=" /src/assets/app-store.png"
+                            alt="app store icon"></li>
+                    <li class="flex justify-center lg:justify-start"><img src=" /src/assets/google-play.png"
+                            alt="play store icon"></li>
+                    <li class="pt-8 font-semibold">Follow Us</li>
+                    <li class="flex justify-center gap-4">
+                        <img src=" /src/assets/youtube.png" alt="youtube icon">
+                        <img src=" /src/assets/facebook.png" alt="facebook icon">
+                        <img src=" /src/assets/twitter.png" alt="twitter icon">
+                        <img src=" /src/assets/instagram.png" alt="instagram icon">
+                        <img src=" /src/assets/linkedin.png" alt="linkedin icon">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-6 py-12 lg:justify-between lg:flex-row">
+            <p>Collers @ 2023. All rights reserved.</p>
+            <ul class="flex gap-8">
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Contact</li>
+                <li class="flex gap-2"><img src=" /src/assets/world.png" alt="language icon">EN</li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        var swiper = new Swiper('.swiper-desktop', {
+            slidesPerView: 4,
+            loop: true,
+            grabCursor: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        var swiper = new Swiper('.swiper-mobile', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>
